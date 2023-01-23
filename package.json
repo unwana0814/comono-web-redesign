@@ -1,0 +1,15 @@
+{
+  "name": "comono-redesign",
+  "version": "1.0.0",
+  "description": "Setup tailwindcss through tailwind Cli",
+  "main": "index.js",
+  "scripts": {
+    "compile-tailwind": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Unwana Ekpo",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
