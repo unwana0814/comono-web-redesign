@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="./dist/output.css">
 </head>
 <body>
-    <!-- Navigation -->
+   <div class="spin-wrapper h-screen flex items-center justify-center bg-gray-300">
+    <svg class="h-10 w-10 animate-spin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg>
+    </div>
+        <!-- Navigation -->
+
     <div class="m-6 sm:mx-14 sm:my-7">
         <div class="overflow-hidden">
             <nav class="flex justify-between">
@@ -303,7 +307,11 @@
                     </div>
 
                 </div>
-                <button class=" sm:hidden bg-gray-700 text-white my-4 font-bold px-4 py-2 rounded hover:scale-x-110 hover:font-semibold duration-300 animate-left">Load More...</button>
+                <div class="sm:hidden">
+                    <button class="flex items-center justify-center rounded bg-gray-700 text-white my-4 font-bold px-4 py-2 hover:scale-x-110 hover:font-semibold duration-300 animate-left"><svg class="mr-3 h-5 w-5 animate-spin text-gray-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg>
+                        <span class="font-medium">Load More...</span> </button>
+                </div>
+
 
                 <div class="card p-4 mx-4 hidden md:block ">
                     <div class="flex items-center">
@@ -416,10 +424,9 @@
         </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<script src="./index.js"></script>
-</body>
-</html>
+
 <script src="./src/index.js"></script>
 </body>
 </html>

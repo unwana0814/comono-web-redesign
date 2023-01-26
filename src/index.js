@@ -10,5 +10,10 @@ openIcon.addEventListener("click", ()=> {
     }
 })
 
+$(window).on('load', function(){
+    $('.spin-wrapper').fadeOut();
+})
+
+
 
 
