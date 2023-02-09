@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <title>Comono Redesign</title>
     <link rel="stylesheet" href="./dist/output.css">
 </head>
@@ -19,12 +20,12 @@
                 <div class="flex justify-between">
                     <img class="w-[80%] cursor-pointer animate-trans-top" src="./src/images/Group 9197.png" alt="">
                 </div>
-                    <svg class="w-7 md:hidden" id="open" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <svg class="w-7 lg:hidden" id="open" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
                       </svg>
 
-                <div class="text-right hidden fixed md:static right-4 top-16 bg-white md:flex md:items-center md:justify-center animate-trans-right" id="menu">
-                    <ul class="text-black md:flex md:text-center gap-x-4">
+                <div class="text-right hidden fixed 0:static right-4 top-16 md:right-14 lg:top-5 bg-white lg:flex lg:items-center lg:justify-center animate-trans-right" id="menu">
+                    <ul class="text-black lg:flex gap-x-4">
                         <li class="hover:scale-x-110 hover:font-semibold duration-300">
                             <a class="" href="">Products</a>
                         </li>
@@ -38,9 +39,14 @@
                             <a class="" href="">Contact Us</a>
                         </li>
                     </ul>
-                    <div class="overflow-hidden">
-                        <button class="text-blue-500 font-bold px-4 py-2 rounded hover:scale-x-110 hover:font-semibold duration-300">Login</button>
-                        <button class="bg-blue-500 px-4 py-2 text-white rounded-full hover:bg-blue-700 hover:scale-x-110 hover:font-semibold duration-300">Signup</button>
+                    <div class="overflow-hidden lg:flex  bg-white ">
+                        <div>
+                            <button class="text-blue-500 font-bold px-4 py-2 rounded hover:scale-x-110 hover:font-semibold duration-300">Login</button>
+                        </div>
+                        <div>
+                            <button class="bg-blue-500 px-4 py-2 text-white rounded-full hover:bg-blue-700 hover:scale-x-110 hover:font-semibold duration-300">Signup</button>
+                        </div>
+
                     </div>
                 </div>
             </nav>
@@ -69,21 +75,51 @@
         <div class="">
             <h1 class="text-center text-2xl font-bold py-6 text-gray-800 animate-left
             duration-500">Trusted by</h1>
-            <div class="flex-wrap justify-between items-center sm:grid lg:grid-cols-4 sm:grid-cols-2 gap-6 animate-trans-right">
-                <div class="w-full h-full card flex justify-center items-center mb-4 md:px-4 py-2 md:grid-cols-1 sm:grid-cols-1">
-                    <img class="w-32 h-32" src="./src/images/FCMB.png" alt="">
+
+            <!-- Slider main container -->
+            <div class="swiper flex-wrap justify-between items-center sm:grid lg:grid-cols-4 sm:grid-cols-2 gap-6">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide rounded-full flex justify-center items-center mb-4 md:px-4 py-2 md:grid-cols-1 sm:grid-cols-1">
+                    <img class="rounded-lg w-[10%] flex items-center justify-center " src="./src/images/fcmb-logo-first-city-monument-bank-png-bank-750x785.png" alt="">
                 </div>
-                <div class="w-full h-full card flex justify-center items-center md:px-4 mb-4 py-2 sm:grid-cols-1 md:grid-cols-1">
-                    <img class="w-42 h-24" src="./src/images/Credit.png" alt="F">
+                <div class="swiper-slide rounded-full flex justify-center items-center mb-4 md:px-4 py-2 md:grid-cols-1 sm:grid-cols-1">
+                    <img class="px-8 rounded-lg w-[10%] flex items-center justify-center " src="./src/images/creditclan.png" alt="">
                 </div>
-                <div class="w-full card h-full flex justify-center items-center mb-4 md:px-4 py-2 sm:grid-cols-1 md:grid-cols-1">
-                    <img class="w-42 h-24" src="./src/images/ECO.png" alt="">
-                </div>
-                <div class="w-full card h-full flex justify-center items-center mb-5 md:px-4 py-2 sm:grid-cols-1 md:grid-cols-1">
-                    <img class="w-42 h-24" src="./src/images/FundColony.png" alt="">
+                <div class="swiper-slide rounded-full flex justify-center items-center mb-4 md:px-4 py-2 md:grid-cols-1 sm:grid-cols-1">
+                    <img class="rounded-lg w-[10%] flex items-center justify-center " src="./src/images/eco_logo_blue.jpg" alt="">
                 </div>
 
+                <div class="swiper-slide rounded-full flex justify-center items-center mb-4 md:px-4 py-2 md:grid-cols-1 sm:grid-cols-1">
+                    <img class="rounded-lg w-[10%] flex items-center justify-center " src="./src/images/fundcolony.jpg" alt="">
+                </div>
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
             </div>
+            <!-- <div class="swiper flex-wrap justify-between items-center sm:grid lg:grid-cols-4 sm:grid-cols-2 gap-6 animate-trans-right">
+                <div class="swiper-slide w-full h-full card flex justify-center items-center mb-4 md:px-4 py-2 md:grid-cols-1 sm:grid-cols-1">
+                    <img class="w-32 h-32" src="./src/images/FCMB.png" alt="">
+                </div>
+                <div class="slider-slide w-full h-full card flex justify-center items-center md:px-4 mb-4 py-2 sm:grid-cols-1 md:grid-cols-1">
+                    <img class="w-42 h-24" src="./src/images/Credit.png" alt="F">
+                </div>
+                <div class="slider-slide w-full card h-full flex justify-center items-center mb-4 md:px-4 py-2 sm:grid-cols-1 md:grid-cols-1">
+                    <img class="w-42 h-24" src="./src/images/ECO.png" alt="">
+                </div>
+                <div class="slider-slide w-full card h-full flex justify-center items-center mb-5 md:px-4 py-2 sm:grid-cols-1 md:grid-cols-1">
+                    <img class="w-42 h-24" src="./src/images/FundColony.png" alt="">
+                </div>
+            </div> -->
 
         </div>
     </div>
@@ -426,6 +462,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
 <script src="./src/index.js"></script>
 </body>
