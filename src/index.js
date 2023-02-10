@@ -11,7 +11,7 @@ openIcon.addEventListener("click", ()=> {
 })
 
 $(window).on('load', function(){
-    $('.spin-wrapper').fadeOut(4000);
+    $('.spin-wrapper').fadeOut();
 })
 
 const swiper = new Swiper('.swiper', {
